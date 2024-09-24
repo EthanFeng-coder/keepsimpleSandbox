@@ -1,0 +1,196 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Full height */
+    max-height: 100%; /* Ensure it doesn't overflow */
+    min-width:100%;
+    position: relative;
+  }
+  
+  .chat-box {
+    height: 100%; /* Full height */
+    max-height: 100%; /* Ensure it doesn't overflow */
+    flex: 1; /* Allow chat-box to take up all remaining space */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding: 10px;
+    border-radius:5px;
+  }
+  .search-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      background-color: #f0f4f9;
+      padding: 10px 20px;
+      border-radius: 50px;
+      min-width:100%;
+      max-width: 100%;
+      margin: 0 auto;
+  }
+  .search-box input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 8px;
+      font-size: 18px;
+  }
+  .search-box div {
+      display: flex;
+      gap: 15px;
+  }
+  
+  .search-box img {
+      width: 24px;
+      cursor: pointer;
+  }
+  .main-bottom {
+      width: 100%;
+      background-color: #fff; /* 添加背景色 */
+      padding-bottom: 8px;
+      box-sizing: border-box;
+  }
+  
+  .main-card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      height: calc(100vh - 30vh);
+      overflow:scroll;
+    }
+  
+    .user-section{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .ai-section{
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .user-input {
+      flex: 0 0 auto;
+      min-height: 50px;
+      max-width: 90%;
+      background-color: #E5E6EB;
+      padding: 15px;
+      border-radius: 10px;
+      word-wrap: break-word; /* 允许长单词换行 */
+      overflow-wrap: break-word; /* 允许长单词换行 */
+      white-space: pre-wrap; /* 保留换行和空格 */
+      font-size: 16px;
+      font-family: Outfit;
+      /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    }
+  
+    .ai-output {
+      flex: 1;
+      overflow-wrap: break-word;
+  }
+  
+    .user-avatar img, .ai-avatar img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .user-avatar, .ai-avatar {
+      flex-shrink: 0;
+    }
+  
+    .ai-output img,
+  .ai-output video {
+      max-width: 35vh;
+      height: auto;
+  }
+  
+  .letter {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 26px auto 0;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 24px;
+    position: relative;
+    width: 100%;
+  }
+  .letter:before, .letter:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  .letter:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+  }
+  .letter:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+  }
+
+  .input-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c0c5d2;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9faff;
+  }
+  
+  .input-bar__form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .input-bar__icon {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .input-bar__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  
+  .input-bar__button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-bar__button:hover {
+    background-color: #45a049;
+  }
+  
+  svg {
+    color: #6c757d; /* Adjust icon color */
+  }
+  
