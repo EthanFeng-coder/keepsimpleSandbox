@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .chat-container {
     display: flex;
     flex-direction: column;
@@ -192,5 +196,84 @@
   
   svg {
     color: #6c757d; /* Adjust icon color */
+  }
+  
+/* tailwind css manual added*/
+  .p-2 {
+    padding: 0.5rem;
+  }
+  .bg-white {
+    background-color: white;
+  }
+  .border {
+    border: 1px solid #e5e7eb;
+  }
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  .font-semibold {
+    font-weight: 600;
+  }
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  .flex {
+    display: flex;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-4xl {
+    max-width: 56rem;
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .focus\:outline-none:focus {
+    outline: none;
+  }
+  .text-gray-700 {
+    color: #374151;
+  }
+  .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .resize-none {
+    resize: none;
+  }
+  .p-1 {
+    padding: 0.25rem;
+  }
+  .bg-green-500 {
+    background-color: #10B981;
+  }
+  .bg-gray-500 {
+    background-color: #6B7280;
+  }
+  .text-white {
+    color: white;
+  }
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  .prose {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .max-w-none {
+    max-width: none;
   }
   
